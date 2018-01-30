@@ -10,7 +10,7 @@ This repository is based on Tensorflow and the TF operators from PointNet++. The
 
 For installing tensorflow, please follow the official instructions in [here](https://www.tensorflow.org/install/install_linux). The code is tested under TF1.3 (higher version should also work) and Python 2.7 on Ubuntu 16.04.
 
-For compiling TF operators, please check `tf_xxx_compile.sh` under each ops subfolder in `code/tf_ops` folder. Note that you need to update `nvcc`, `python` and 'tensoflow include library' if necessary. You also need to remove the `-D_GLIBCXX_USE_CXX11_ABI=0` flag in g++ command in order to compile correctly.
+For compiling TF operators, please check `tf_xxx_compile.sh` under each op subfolder in `code/tf_ops` folder. Note that you need to update `nvcc`, `python` and `tensoflow include library` if necessary. You also need to remove `-D_GLIBCXX_USE_CXX11_ABI=0` flag in g++ command in order to compile correctly if necessary.
 
 
 ### Usage
@@ -18,7 +18,7 @@ For compiling TF operators, please check `tf_xxx_compile.sh` under each ops subf
 1. Clone the repository:
 
    ```shell
-   git clone https://github.com/hszhao/PSPNet.git
+   git clone https://github.com/yulequan/PU-Net.git
    ```
 
 2. To train the model:
@@ -42,12 +42,13 @@ For compiling TF operators, please check `tf_xxx_compile.sh` under each ops subf
 ## Citation
 
 If PU-Net is useful for your research, please consider citing:
+
     @article{yu2018pu,
-  title={PU-Net: Point Cloud Upsampling Network},
-  author={Yu, Lequan and Li, Xianzhi and Fu, Chi-Wing and Cohen-Or, Daniel and Heng, Pheng-Ann},
-  journal={arXiv preprint arXiv:1801.06761},
-  year={2018}
-}
+         title={PU-Net: Point Cloud Upsampling Network},
+         author={Yu, Lequan and Li, Xianzhi and Fu, Chi-Wing and Cohen-Or, Daniel and Heng, Pheng-Ann},
+         journal={arXiv preprint arXiv:1801.06761},
+         year={2018}
+   }
 
 ### Questions
 
