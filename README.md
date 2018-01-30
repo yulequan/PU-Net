@@ -19,6 +19,7 @@ For compiling TF operators, please check `tf_xxx_compile.sh` under each op subfo
 
    ```shell
    git clone https://github.com/yulequan/PU-Net.git
+   cd PU-Net
    ```
 
 2. To train the model:
