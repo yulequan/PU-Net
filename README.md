@@ -21,8 +21,10 @@ For compiling TF operators, please check `tf_xxx_compile.sh` under each op subfo
    git clone https://github.com/yulequan/PU-Net.git
    cd PU-Net
    ```
-
-2. To train the model:
+2. Compile the TF operators
+   Follow the above information to compile the TF operators. 
+   
+3. Train the model:
   First, you need to download the training patches in HDF5 format from [GoogleDrive](https://drive.google.com/file/d/1te8d1y2BTFBL_3CB1jpqbOFzkkjvtKsE/view?usp=sharing) and put it in folder `h5_data`.
   Then run:
    ```shell
@@ -30,7 +32,7 @@ For compiling TF operators, please check `tf_xxx_compile.sh` under each op subfo
    python main.py --phase train
    ```
 
-3. To evaluate the model:
+4. Evaluate the model:
     First, you need to download the pretrained model from [GoogleDrive](https://drive.google.com/file/d/1c1oYNwIzKxCOF_6bqm3HmwYcCZv1230Z/view?usp=sharing), extract it and put it in folder 'model'.
     Then run:
    ```shell
