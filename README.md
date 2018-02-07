@@ -40,6 +40,8 @@ For compiling TF operators, please check `tf_xxx_compile.sh` under each op subfo
    python main.py --phase test --log_dir ../model/generator2_new6
    ```
    You will see the input and output results in the folder `../model/generator2_new6/result`.
+   
+5. The training and testing mesh files can be downloaded from [GoogleDrive](https://drive.google.com/file/d/1lp2HWU78tx_-tz8cxE8PSxb-M7ZQCMOq/view?usp=sharing).
 
 
 ## Citation
