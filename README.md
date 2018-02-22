@@ -3,7 +3,7 @@ by [Lequan Yu](http://appsrv.cse.cuhk.edu.hk/~lqyu/), Xianzhi Li, [Chi-Wing Fu](
 
 ### Introduction
 
-This repository is for '[PU-Net: Point Cloud Upsampling Network](https://arxiv.org/abs/1801.06761)'. The code is modified from [PointNet++](https://github.com/charlesq34/pointnet2) and [PointSetGeneration](https://github.com/fanhqme/PointSetGeneration). 
+This repository is for our CVPR 2018 paper'[PU-Net: Point Cloud Upsampling Network](https://arxiv.org/abs/1801.06761)'. The code is modified from [PointNet++](https://github.com/charlesq34/pointnet2) and [PointSetGeneration](https://github.com/fanhqme/PointSetGeneration). 
 
 ### Installation
 This repository is based on Tensorflow and the TF operators from PointNet++. Therefore, you need to install tensorflow and compile the TF operators. 
