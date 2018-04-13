@@ -43,6 +43,18 @@ For compiling TF operators, please check `tf_xxx_compile.sh` under each op subfo
    
 5. The training and testing mesh files can be downloaded from [GoogleDrive](https://drive.google.com/file/d/1lp2HWU78tx_-tz8cxE8PSxb-M7ZQCMOq/view?usp=sharing).
 
+###Evaluation code
+We provide the code to calculate the metric NUC in the evaluation code folder. In order to use it, you need to install the CGAL library. Please refer [this link](https://www.cgal.org/download/linux.html) to install this library.
+Then:
+   ```shell
+   cd evaluation_code
+   cmake .
+   make
+   ./evaluation nicolo.off nicolo.xyz
+```
+The second argument is the mesh, and the third one is the predicted points. 
+
+After running this program, the distances of each predicted point to the surface are written in `nicolo_point2mesh_distance.xyz`, and the density of each disk (n_i/N) are written in `nicolo_density.xyz`.
 
 ## Citation
 
