@@ -43,7 +43,7 @@ For compiling TF operators, please check `tf_xxx_compile.sh` under each op subfo
    
 5. The training and testing mesh files can be downloaded from [GoogleDrive](https://drive.google.com/file/d/1lp2HWU78tx_-tz8cxE8PSxb-M7ZQCMOq/view?usp=sharing).
 
-###Evaluation code
+### Evaluation code
 We provide the code to calculate the metric NUC in the evaluation code folder. In order to use it, you need to install the CGAL library. Please refer [this link](https://www.cgal.org/download/linux.html) to install this library.
 Then:
    ```shell
