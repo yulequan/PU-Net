@@ -12,6 +12,14 @@ For installing tensorflow, please follow the official instructions in [here](htt
 
 For compiling TF operators, please check `tf_xxx_compile.sh` under each op subfolder in `code/tf_ops` folder. Note that you need to update `nvcc`, `python` and `tensoflow include library` if necessary. You also need to remove `-D_GLIBCXX_USE_CXX11_ABI=0` flag in g++ command in order to compile correctly if necessary.
 
+To compile the operators in TF version >=1.4, you need to modify the compile scripts slightly.
+
+First, find Tensorflow include and library paths.
+
+        TF_INC=$(python -c 'import tensorflow as tf; print(tf.sysconfig.get_include())')
+        TF_LIB=$(python -c 'import tensorflow as tf; print(tf.sysconfig.get_lib())')
+        
+Then, add flags of `-I$TF_INC/external/nsync/public -L$TF_LIB -ltensorflow_framework` to the `g++` commands.
 
 ### Usage
 
