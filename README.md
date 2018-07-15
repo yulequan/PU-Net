@@ -68,11 +68,11 @@ After running this program, the distances of each predicted point to the surface
 
 If PU-Net is useful for your research, please consider citing:
 
-    @article{yu2018pu,
+    @inproceedings{yu2018pu,
          title={PU-Net: Point Cloud Upsampling Network},
          author={Yu, Lequan and Li, Xianzhi and Fu, Chi-Wing and Cohen-Or, Daniel and Heng, Pheng-Ann},
-         journal={arXiv preprint arXiv:1801.06761},
-         year={2018}
+         booktitle = {Proceedings of IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+         year = {2018}
    }
 
 ### Questions
