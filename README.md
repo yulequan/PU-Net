@@ -51,7 +51,7 @@ Then, add flags of `-I$TF_INC/external/nsync/public -L$TF_LIB -ltensorflow_frame
    
 5. The training and testing mesh files can be downloaded from [GoogleDrive](https://drive.google.com/file/d/1lp2HWU78tx_-tz8cxE8PSxb-M7ZQCMOq/view?usp=sharing).
 
-Note: In this version, we treat the whole input point cloud as a single input. If the number of your input point cloud is retatively big, you had better divide the input point cloud into patches and treat each patch as a single input. (see our following work [EC-Net](https://github.com/yulequan/EC-Net))
+Note: In this version, we treat the whole input point cloud as a single input. If the number of points in your input point cloud is big, you had better divide the input point cloud into patches and treat each patch as a single input. (see our following work [EC-Net](https://github.com/yulequan/EC-Net))
 
 ### Evaluation code
 We provide the code to calculate the metric NUC in the evaluation code folder. In order to use it, you need to install the CGAL library. Please refer [this link](https://www.cgal.org/download/linux.html) to install this library.
