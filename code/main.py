@@ -237,7 +237,7 @@ def prediction_whole_model(data_folder=None,show=False,use_normal=False):
             path = os.path.join(save_path,item.split('/')[-1])
             if show:
                 f,axis = plt.subplots(3)
-                axis[0].imshow(pc_util.point_cloud_three_views(input[:,0:3],diameter=5))
+                axis[0].imshow(pc_util.point_cloud_three_views(input[0, :,0:3],diameter=5))
                 axis[1].imshow(pc_util.point_cloud_three_views(pred_pl[0,:,:],diameter=5))
                 axis[2].imshow(pc_util.point_cloud_three_views(gt[:,0:3], diameter=5))
                 plt.show()
@@ -258,4 +258,4 @@ if __name__ == "__main__":
         train(assign_model_path=ASSIGN_MODEL_PATH)
         LOG_FOUT.close()
     else:
-        prediction_whole_model()
+        prediction_whole_model(show=True)
