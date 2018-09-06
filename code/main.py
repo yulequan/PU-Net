@@ -258,4 +258,4 @@ if __name__ == "__main__":
         train(assign_model_path=ASSIGN_MODEL_PATH)
         LOG_FOUT.close()
     else:
-        prediction_whole_model(show=True)
+        prediction_whole_model()
