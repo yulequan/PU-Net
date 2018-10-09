@@ -19,7 +19,7 @@ First, find Tensorflow include and library paths.
         TF_INC=$(python -c 'import tensorflow as tf; print(tf.sysconfig.get_include())')
         TF_LIB=$(python -c 'import tensorflow as tf; print(tf.sysconfig.get_lib())')
         
-Then, add flags of `-I$TF_INC/external/nsync/public -L$TF_LIB -ltensorflow_framework` to the `g++` commands.
+Then, add flags of `-I$TF_INC/external/nsync/public -L$TF_LIB -ltensorflow_framework` to the `g++` commands. You can refer [this file](https://github.com/yulequan/PU-Net/blob/master/code/tf_ops/CD/makefile_fortf1.4%2B).
 
 ### Note
 When running the code, if you have `undefined symbol: _ZTIN10tensorflow8OpKernelE` error, you need to compile the TF operators. If you have already added the `-I$TF_INC/external/nsync/public -L$TF_LIB -ltensorflow_framework` but still have ` cannot find -ltensorflow_framework` error. Please use 'locate tensorflow_framework
