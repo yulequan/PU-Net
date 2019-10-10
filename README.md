@@ -37,7 +37,7 @@ When running the code, if you have `undefined symbol: _ZTIN10tensorflow8OpKernel
    Follow the above information to compile the TF operators. 
    
 3. Train the model:
-  First, you need to download the training patches in HDF5 format from [GoogleDrive](https://drive.google.com/file/d/1te8d1y2BTFBL_3CB1jpqbOFzkkjvtKsE/view?usp=sharing) and put it in folder `h5_data`.
+  First, you need to download the training patches in HDF5 format from [GoogleDrive](https://drive.google.com/file/d/1wMtNGvliK_pUTogfzMyrz57iDb_jSQR8/view?usp=sharing) and put it in folder `h5_data`.
   Then run:
    ```shell
    cd code
@@ -45,7 +45,7 @@ When running the code, if you have `undefined symbol: _ZTIN10tensorflow8OpKernel
    ```
 
 4. Evaluate the model:
-    First, you need to download the pretrained model from [GoogleDrive](https://drive.google.com/file/d/1c1oYNwIzKxCOF_6bqm3HmwYcCZv1230Z/view?usp=sharing), extract it and put it in folder 'model'.
+    First, you need to download the pretrained model from [GoogleDrive](https://drive.google.com/file/d/1PWZb0d8QbmEAuYtJunQ9Z30VPgdU6rdd/view?usp=sharing), extract it and put it in folder 'model'.
     Then run:
    ```shell
    cd code
@@ -53,7 +53,7 @@ When running the code, if you have `undefined symbol: _ZTIN10tensorflow8OpKernel
    ```
    You will see the input and output results in the folder `../model/generator2_new6/result`.
    
-5. The training and testing mesh files can be downloaded from [GoogleDrive](https://drive.google.com/file/d/1lp2HWU78tx_-tz8cxE8PSxb-M7ZQCMOq/view?usp=sharing).
+5. The training and testing mesh files can be downloaded from [GoogleDrive](https://drive.google.com/file/d/1R21MD1O6q8E7ANui8FR0MaABkKc30PG4/view?usp=sharing).
 
 Note: In this version, we treat the whole input point cloud as a single input. If the number of points in your input point cloud is big, you had better divide the input point cloud into patches and treat each patch as a single input. (see our following work [EC-Net](https://github.com/yulequan/EC-Net))
 
